@@ -31,6 +31,7 @@ struct ContentView: View {
             await loadData()
         }
     }
+
     func loadData() async {
         guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
             print("Invalid URL")
